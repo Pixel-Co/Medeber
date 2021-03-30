@@ -1,0 +1,928 @@
+/**
+ * Theme Name: Medeber Teatro
+ * Author: Stéphane Ripa | Pixel&Co, pour Medeber Teatro
+ */
+
+
+ /**
+  * ==================================================================
+  *              IMPORT DES FONT CAVIAR-DREAMS ET FUTURA-MEDIUM
+  * ==================================================================
+  */
+
+  @font-face {
+      font-family: 'futura';
+      src: url('font/Futura\ Medium/futura_medium-webfont.eot');
+      src: url('font/Futura\ Medium/futura_medium-webfont.eot?#iefix') format('embedded-opentype'),
+      url('font/Futura\ Medium/futura_medium-webfont.woff2') format('woff2'),
+      url('font/Futura\ Medium/futura_medium-webfont.woff') format('woff'),
+      url('font/Futura\ Medium/futura_medium-webfont.ttf') format('truetype'),
+      url('font/Futura\ Medium/futura_medium-webfont.svg#svgfutura_medium-webfont') format('svg'),
+
+  }
+
+  @font-face{
+      font-family: 'caviar';
+      src: url('font/caviar\ dreams/caviardreams_bold-webfont.eot');
+      src: url('font/caviar\ dreams/caviardreams_bold-webfont.eot?#iefix') format('embedded-opentype'),
+      url('font/caviar\ dreams/caviardreams_bold-webfont.woff2') format('woff2'),
+      url('font/caviar\ dreams/caviardreams_bold-webfont.woff') format('woff'),
+      url('font/caviar\ dreams/caviardreams_bold-webfont.ttf') format('truetype'),
+      url('font/caviar\ dreams/caviardreams_bold-webfont.svg#svgcavirdreams-webfont') format('svg')
+  }
+
+
+
+
+
+
+ /**
+  * ==================================================================
+  *                 NAVBAR SUR TOUTES LES PAGES
+  * ==================================================================
+  */
+
+    .navbar{
+        position:relative;
+        margin-top: -50px;
+
+    }
+
+    .navbar-nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        margin-left: 50%;
+
+    }
+
+    .menu-item{
+        margin-left: 15px;
+    }
+
+    .nav-link{
+    background-color: #f8efef;
+    color: #464545;
+    font-weight: bold;
+    width: 150px;
+    padding-left: 10px;
+    text-align: center;
+    font-family: 'caviar';
+    
+    }
+    .nav-link:hover{
+        background-color: #d90b0d;
+        text-decoration: none;
+        color: #f8efef;
+    }
+
+
+
+
+/**
+ * -----------------------------------------
+ *      SOUS-MENU-1
+ * -----------------------------------------
+ */
+.sous-menu-1{
+    position: absolute;
+    float:left;
+    display: flex;
+    left: 20;
+}
+
+.menu-link-class{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:20px;
+    text-decoration:none;
+    margin-top:15px;
+    font-family: 'caviar';
+}
+.menu-link-class:hover{
+
+    color: #e9a771;
+    text-decoration:none;
+}
+
+/**
+ * -----------------------------------------
+ *      SOUS-MENU-2
+ * -----------------------------------------
+ */
+.sous-menu-2{
+    position: absolute;
+    float:left;
+    display: flex;
+    left: 10; 
+    width: 200px;
+}
+
+.menu-link-class-menu2{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:16px;
+    text-decoration:none;
+    margin-top: 20px;
+    font-family: 'caviar';
+}
+.menu-link-class-menu2:hover{
+
+    color: #e9a771;
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+/**
+ * -----------------------------------------------------------------------------------------
+ *     LOGO SUR IMG HEADER ET CHOIX DES LANGUES EN POSITION ABSOLUTE SUR IMAGES D'ENTETE
+ * -----------------------------------------------------------------------------------------
+ */
+.logo-img{
+    position: absolute;
+    float: left;
+    left: 3%;
+    top: 6%;
+}
+
+.choix-langue-onpage{
+
+    float: right;
+    position: absolute;
+    top: 12%; right: 8%;
+    
+}
+
+.choix-langue-page{
+
+    background-color: #FCEFEF;
+    width: 40px; height: 40px;
+    text-align: center;
+    margin-left: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: #707070 solid 2px;
+    
+}
+.choix-langue-page:hover{
+    background-color: #d90b0d;
+}
+
+.a-link-page{
+    color: #707070;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.a-link-page:hover{
+    color: #FCEFEF;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+    
+
+/**
+  * ==================================================================
+  *                IMAGE D'ENTETE SUR PAGE
+  * ==================================================================
+  */
+
+/**
+ * page about
+*/
+  .img-about{
+    background-image :url('/wp-content/themes/Medeber/img/caravane.PNG');
+    filter: blur(0.4rem);
+    background-size: cover;
+    background-position: center 65%;
+    height: 250px;
+    left: 0; right: 0;
+    width: 100%;
+}
+
+
+/**
+ * page news
+ */
+.img-news{
+    background-image :url('/wp-content/themes/Medeber/img/news.PNG');
+    filter: blur(0.4rem);
+    background-size: cover;
+    background-position: center 65%;
+    height: 250px;
+    left: 0; right: 0;
+    width: 100%;
+}
+
+
+/**
+ * page travaux
+ */
+.img-travaux{
+    background-image :url('/wp-content/themes/Medeber/img/travaux.PNG');
+    filter: blur(0.4rem);
+    background-size: cover;
+    background-position: center 65%;
+    height: 250px;
+    left: 0; right: 0;
+    width: 100%;
+}
+
+
+/**
+ * page workshops
+ */
+.img-workshops{
+    background-image :url('/wp-content/themes/Medeber/img/workshops.PNG');
+    filter: blur(0.4rem);
+    background-size: cover;
+    background-position: center 65%;
+    height: 250px;
+    left: 0; right: 0;
+    width: 100%;
+} 
+
+
+/**
+ * page galerie
+ */
+.img-galerie{
+    background-image :url('/wp-content/themes/Medeber/img/galerie.PNG');
+    filter: blur(0.4rem);
+    background-size: cover;
+    background-position: center 65%;
+    height: 250px;
+    left: 0; right: 0;
+    width: 100%;
+} 
+
+
+/**
+ * page contact
+ */
+.img-contact{
+    background-image :url('/wp-content/themes/Medeber/img/contact.PNG');
+    filter: blur(0.4rem);
+    background-size: cover;
+    background-position: center 65%;
+    height: 250px;
+    left: 0; right: 0;
+    width: 100%;
+}
+
+
+
+/**
+  * ==================================================================
+  *                ELEMENT DANS BODY
+  * ==================================================================
+  */
+
+  /* Background body */
+  .m{
+    background-image :url('/wp-content/themes/Medeber/img/Groupe-20.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center 31%;
+  }
+
+  /* Position du backgound-body dans page contact */
+  .m-contact{
+    background-image :url('/wp-content/themes/Medeber/img/Groupe-20.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right 65%;
+  }
+
+  /* Position background-body sur page workshop */
+  .m-workshops{
+    background-image :url('/wp-content/themes/Medeber/img/Groupe-20.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center 17%;
+  }
+
+
+/**
+ * Position du container
+*/
+.container{
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+
+
+
+
+ /**
+  * ==================================================================
+  *                 PAGE D'ACCUEIL FULL SCREEN
+  * ==================================================================
+  */
+
+.img-accueil{
+
+    background-image: url('/wp-content/themes/Medeber/img/img-accueil.PNG');
+    background-size: 90%;
+    background-position: top;
+ }
+
+.navbar-accueil-langue{
+
+    background-color: #030832;
+    height: 150px;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+
+
+.choix-langue-lg{
+
+    float: right;
+    position: absolute;
+    bottom: 0; right: 10%;
+}
+
+.choix-langue{
+
+    background-color: #F18400;
+    width: 60px; height: 60px;
+    color: #FCEFEF;
+    text-align: center;
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #707070 2px;
+}
+
+.a-link-accueil{
+    color: #FCEFEF;
+    font-weight: bold;
+    
+}
+.a-link-accueil:hover{
+    text-decoration: none;
+    color:#FCEFEF
+}
+
+
+
+/**
+ * ====================================================
+ *        GESTION DE LA GALERIE SUR PAGE NEWS
+ * ====================================================
+ */
+
+ .wp-block-jetpack-slideshow_image{
+    filter: blur(0.5rem);
+ }
+ .wp-block-jetpack-slideshow_image:hover{
+    filter: blur(0rem);
+ }
+
+
+
+ /**
+  * ===================================
+  *        PAGE CONTACT
+  * ===================================
+  */
+
+  .map{
+      float: left;
+      margin-top: 100px;
+  }
+
+  .content-contact{
+      float: none;
+      margin-left: 300px;
+  }
+
+  /* position du content depuis la page admin contact - class additionnelle */
+  .contact-contact{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    
+  }
+
+
+  /**
+   * ===================================
+   *     PAGE WORKS
+   * ===================================
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /**
+  * ==================================================================
+  *                 FOOTER
+  * ==================================================================
+  */
+
+  footer{
+      background-color: #f18400;
+      height: auto;
+      position: absolute;
+      left:0; right: 0;
+  }
+
+
+  .pixco-div{
+      float: right;
+      position: absolute;
+      bottom: 0; right: 3%;
+      
+  }
+  .pixco{
+      font-size: 15px;
+      bottom: 0%;
+  }
+
+  .coordonnees{
+      font-size: 17px;
+      color:#FCEFEF ;
+      float: left;
+      margin-top: 2%;
+      margin-left: 3%;
+      margin-bottom: 5%;
+  }
+
+
+  /* Position de la div des icones */
+.social-icons{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+  /**
+   * icones reseaux sociaux
+   */
+  .fa-facebook-f{
+      color:#3A5A99 ;
+      font-size: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .fa-instagram{
+    color:#D50060 ;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-vimeo-v{
+    color:black ;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/**
+ * ==============================================================================================
+ *                        ++++++++++++++++++++++++++++++++
+ *                        +                              +         
+ *                        +    RESPONSIVE MEDIA SCREEN   +
+ *                        +                              +
+ *                        ++++++++++++++++++++++++++++++++
+ *                               \          /
+ *                                \ ( .!. )/
+ *                                    |
+                                    [  ]
+                                     |
+                                    /\
+                                  _/  \_
+
+ * ==============================================================================================
+ */
+
+
+ /**
+  * ==================================================================
+  *                 MEDIA SCREEN MAX 1400 
+  * ==================================================================
+  */
+
+ @media screen and (max-width: 1400px){
+
+    
+
+    .navbar-nav{
+        margin-left: 20%;
+
+    }
+
+
+    .img-accueil{
+        background-size: cover;
+        background-position: bottom;
+        height: 1000px ;
+        background-repeat:no-repeat;
+    }
+
+    /**
+    * -----------------------------------------
+    *      SOUS-MENU-1
+    * -----------------------------------------
+    */
+    .sous-menu-1{
+    position: absolute;
+    float:left;
+    display: flex;
+    left: 15;
+    }
+
+    .menu-link-class{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:18px;
+    text-decoration:none;
+    }
+
+    /**
+    * -----------------------------------------
+    *      SOUS-MENU-2
+    * -----------------------------------------
+    */
+    .sous-menu-2{
+    position: absolute;
+    float:left;
+    display: flex;
+    left: 10; 
+    width: 200px;
+    }
+
+    .menu-link-class-menu2{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:14px;
+    text-decoration:none;
+    margin-top: 20px;
+    font-family: 'caviar';
+    
+    }
+
+
+    /**
+     * -----------------------------------------
+     *            BODY CONTENT
+     * -----------------------------------------
+     */
+    .workshop-content{
+        margin-left: 90px;
+    }
+
+
+    .travaux-content{
+        margin-left: 190px;
+    }
+
+    .bxl-content{
+        margin-left: 90px;
+
+    }
+
+    .roma-content{
+        margin-left: 90px;
+    }
+
+    .p-works{
+        margin-left: 220px;
+    }
+
+
+ }
+
+
+ /**
+  * ==================================================================
+  *                 MEDIA SCREEN MAX 700 - mobil
+  * ==================================================================
+  */
+
+ @media screen and (max-width: 700px){
+
+    .navbar-nav{
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .menu-item{
+        margin-top: 15px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background-color: #FCEFEF ;
+    }
+
+
+    /**
+    * -----------------------------------------
+    *      SOUS-MENU-1
+    * -----------------------------------------
+    */
+   .sous-menu-1{
+    position: absolute;
+    float:left;
+    display: flex;
+    left: 0;
+    }
+
+    .menu-link-class{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:18px;
+    text-decoration:none;
+    }
+
+    /**
+    * -----------------------------------------
+    *      SOUS-MENU-2
+    * -----------------------------------------
+    */
+    .sous-menu-2{
+    position: absolute;
+    float:left;
+    display: flex;
+    left:-10; 
+    width: 110px;
+    }
+
+    .menu-link-class-menu2{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:12px;
+    text-decoration:none;
+    margin-top: 20px;
+    
+    }
+
+
+      /**
+     * -----------------------------------------------
+     *                PAGE D'ACCUEIL
+     * -----------------------------------------------
+     */
+
+    .img-accueil{
+        background-size: cover;
+        background-position: bottom;
+        height: 700px ;
+        background-repeat:no-repeat;
+    }
+
+    .choix-langue-lg{
+        margin-right: 30px;
+    }
+
+    .navbar-accueil-langue{
+        height: 100px;
+    }
+
+
+    /**
+     * -----------------------------------------
+     *               content body
+     * -----------------------------------------
+     */
+
+    .m{
+        background-size: 80%;
+        background-position: center 21%;
+    }
+
+    .m-contact{
+        background-size: 80%;
+        background-position: center 40%;
+    }
+
+    .m-workshops{
+        background-size: 80%;
+        background-position: center 15%;
+    }
+
+
+
+
+    .wp-image-9{
+        width: 300px;
+        height: 250px;
+    }
+
+    
+    .workshop-content{
+        margin-left: 90px;
+    }
+
+
+    .travaux-content{
+        margin-left: 110px;
+    }
+
+    .bxl-content{
+        margin-left: 90px;
+
+    }
+
+    .roma-content{
+        margin-left: 90px;
+    }
+
+    .p-works{
+        margin-left: 120px;
+    }
+
+
+    /**
+     * ------------------------------------------
+     *             FOOTER
+     * -----------------------------------------
+     */
+
+     .social-icons{
+         float: left;
+         position: relative;
+         margin-bottom: 20px;
+     }
+
+     .pixco{
+         font-size: 13px;
+     }
+
+
+     /**
+      * ----------------------------------
+      *         LOGO
+      * ----------------------------------
+      */
+
+     .logo-img{
+        position: absolute;
+        float: left;
+        left: 3%;
+        top: 10%;
+    }
+
+
+    /**
+     * -------------------------------------
+     *             CONTACT
+     * -------------------------------------
+     */
+    .map{
+        width: 100px;
+    }
+
+    .content-contact{
+        margin-left: 130px;
+    }
+
+
+
+ }
+
+/**
+ * ------------------------------------------------
+ *          TABLETTE 800px
+ * ------------------------------------------------
+ */
+ @media screen and (max-width: 800px){
+
+    
+
+    .navbar-nav{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 10px;
+        margin-left: 20px;
+
+    }
+
+    .menu-item{
+        margin-top: 10px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background-color: #FCEFEF ;
+    }
+
+
+    /**
+    * -----------------------------------------
+    *      SOUS-MENU-1
+    * -----------------------------------------
+    */
+   .sous-menu-1{
+    position: absolute;
+    float:left;
+    display: flex;
+    left: 0;
+    }
+
+    .menu-link-class{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:15px;
+    text-decoration:none;
+    }
+
+    /**
+    * -----------------------------------------
+    *      SOUS-MENU-2
+    * -----------------------------------------
+    */
+    .sous-menu-2{
+    position: absolute;
+    float:left;
+    display: flex;
+    left:-10; 
+    width: 110px;
+    }
+
+    .menu-link-class-menu2{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+    font-size:20px;
+    text-decoration:none;
+    margin-top: 15px;
+    
+    }
+
+    .travaux-content{
+        font-size: 20px;
+        width: 550px;
+        margin-left:80px;
+        margin-top:100px ;
+        
+    }
+
+    .travaux-content-2{
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .wp-block-column{
+        margin-top: -100px;
+    }
+
+
+
+    
+
+
+
+
+ }
+
+
+
+
+
+
+  
+
+
+
+
+
