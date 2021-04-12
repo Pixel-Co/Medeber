@@ -32,18 +32,21 @@
 get_header();
 ?>
 
+        
+            <aside class="col-md-3 blog-sidebar ">
+                <?php dynamic_sidebar('gallery'); ?>
+            </aside><!-- /.blog-sidebar -->
 
 
+    <div class="content">
+        <?php 
+            the_content();
+        ?>
+    </div>
 
-
-    <?php 
-        the_content();
-    ?>
-
-
-
-
-
+      <a href="https://www.facebook.com/medeberteatro/" target="_blank">      
+        <button type="button" class="btn btn-primary btn-mobile">Suivez notre actu fecebook</button>
+      </a>   
 
 
 <?php get_footer() ?>

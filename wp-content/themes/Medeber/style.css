@@ -72,7 +72,7 @@
     .nav-link:hover{
         background-color: #d90b0d;
         text-decoration: none;
-        color: #f8efef;
+        color: #FCEFEF;
     }
 
 
@@ -326,6 +326,40 @@
 }
 
 
+/**
+ *----------------------------
+ *   SIDEBAR page à propos
+ *----------------------------
+ */
+
+aside{
+   position:absolute;
+   float:left;
+   margin-left: -250px;
+   top:0;
+   
+}
+
+.content{
+}
+
+
+.caravane{
+}
+
+.btn-mobile{
+  display:none;
+}
+
+h4 a{
+  color:#464545;
+  text-decoration:none;
+}
+h4 a:hover{
+  color:#e9a771;
+  text-decoration:none;
+}
+
 
 
 
@@ -337,8 +371,8 @@
 
 .img-accueil{
 
-    background-image: url('/wp-content/themes/Medeber/img/img-accueil.PNG');
-    background-size: 90%;
+    background-image: url('/wp-content/themes/Medeber/img/IMG_accueil.png');
+    background-size: cover;
     background-position: top;
  }
 
@@ -379,6 +413,14 @@
 .a-link-accueil:hover{
     text-decoration: none;
     color:#FCEFEF
+}
+
+.logo-medeber-fullscreen{
+
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 300px; height: 300px;
 }
 
 
@@ -514,18 +556,18 @@
 
 /**
  * ==============================================================================================
- *                        ++++++++++++++++++++++++++++++++
- *                        +                              +         
- *                        +    RESPONSIVE MEDIA SCREEN   +
- *                        +                              +
- *                        ++++++++++++++++++++++++++++++++
- *                               \          /
- *                                \ ( .!. )/
+ *                      ++++++++++++++++++++++++++++++++
+ *                      +                              +         
+ *                      +    RESPONSIVE MEDIA SCREEN   +
+ *                      +                              +
+ *                      ++++++++++++++++++++++++++++++++
+ *                               \        /
+ *                                \ (.!.)/
  *                                    |
-                                    [  ]
-                                     |
-                                    /\
-                                  _/  \_
+                                     [ ]
+                                      |
+                                     /\
+                                   _/  \_
 
  * ==============================================================================================
  */
@@ -533,11 +575,11 @@
 
  /**
   * ==================================================================
-  *                 MEDIA SCREEN MAX 1400 
+  *                 MEDIA SCREEN MAX 1460 
   * ==================================================================
   */
 
- @media screen and (max-width: 1400px){
+ @media screen and (max-width: 1470px){
 
     
 
@@ -626,6 +668,47 @@
         margin-left: 220px;
     }
 
+    /**
+     * ========================================
+     *     LOGO ET FOND FULL SCREEN ACCUEIL
+     * ========================================
+     */
+    .logo-medeber-fullscreen{
+
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 250px; height: 250px;
+    }
+
+
+   /**
+    *----------------------------
+    *   SIDEBAR page à propos
+    *----------------------------
+    */
+
+    aside{
+      position:absolute;
+      float:left;
+      margin-left: -50px;
+      top:0;
+   
+    }
+
+   .content{
+   }
+
+
+   .caravane{
+      margin-left: 50px;
+   }
+
+   .btn-mobile{
+      display:none;
+   }
+
+
 
  }
 
@@ -641,6 +724,7 @@
     .navbar-nav{
         display: grid;
         grid-template-columns: auto;
+        
 
     }
 
@@ -652,6 +736,8 @@
         background-color: #FCEFEF ;
     }
 
+    
+
 
     /**
     * -----------------------------------------
@@ -661,8 +747,10 @@
    .sous-menu-1{
     position: absolute;
     float:left;
-    display: flex;
-    left: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    left: 10;
+    margin-top: -40px;
     }
 
     .menu-link-class{
@@ -671,6 +759,7 @@
     font-weight: bold;
     font-size:18px;
     text-decoration:none;
+    margin-left: 20px;
     }
 
     /**
@@ -681,9 +770,10 @@
     .sous-menu-2{
     position: absolute;
     float:left;
-    display: flex;
-    left:-10; 
-    width: 110px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    left:10px;
+    margin-top: -40px;
     }
 
     .menu-link-class-menu2{
@@ -693,6 +783,7 @@
     font-size:12px;
     text-decoration:none;
     margin-top: 20px;
+    margin-left: 20px;
     
     }
 
@@ -703,11 +794,12 @@
      * -----------------------------------------------
      */
 
-    .img-accueil{
-        background-size: cover;
-        background-position: bottom;
-        height: 700px ;
-        background-repeat:no-repeat;
+    .logo-medeber-fullscreen{
+
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        width: 150px; height: 150px;
     }
 
     .choix-langue-lg{
@@ -755,7 +847,8 @@
 
 
     .travaux-content{
-        margin-left: 110px;
+        margin-left: 5%;
+        margin-top: 70px;
     }
 
     .bxl-content{
@@ -768,8 +861,33 @@
     }
 
     .p-works{
-        margin-left: 120px;
+        margin-left: 5%;
+        margin-top:120px;
     }
+
+
+
+    .btn-mobile{
+       display: block;
+       margin-top: 60px;
+       margin-left: 12%;
+       width: 250px;
+       height: 50px;
+       background-color:#464545;
+    }
+    .btn-mobile:hover{
+       background-color:#e9a771;
+       text-decoration:none;
+     }
+
+    aside{
+       display:none;
+    }
+
+    .content{
+       z-index:1;
+     }
+
 
 
     /**
@@ -799,7 +917,7 @@
         position: absolute;
         float: left;
         left: 3%;
-        top: 10%;
+        top: 6%;
     }
 
 
@@ -820,100 +938,7 @@
 
  }
 
-/**
- * ------------------------------------------------
- *          TABLETTE 800px
- * ------------------------------------------------
- */
- @media screen and (max-width: 800px){
 
-    
-
-    .navbar-nav{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        margin-top: 10px;
-        margin-left: 20px;
-
-    }
-
-    .menu-item{
-        margin-top: 10px;
-    }
-
-    .navbar-light .navbar-toggler-icon{
-        background-color: #FCEFEF ;
-    }
-
-
-    /**
-    * -----------------------------------------
-    *      SOUS-MENU-1
-    * -----------------------------------------
-    */
-   .sous-menu-1{
-    position: absolute;
-    float:left;
-    display: flex;
-    left: 0;
-    }
-
-    .menu-link-class{
-    display: flex;
-    color: #464545;
-    font-weight: bold;
-    font-size:15px;
-    text-decoration:none;
-    }
-
-    /**
-    * -----------------------------------------
-    *      SOUS-MENU-2
-    * -----------------------------------------
-    */
-    .sous-menu-2{
-    position: absolute;
-    float:left;
-    display: flex;
-    left:-10; 
-    width: 110px;
-    }
-
-    .menu-link-class-menu2{
-    display: flex;
-    color: #464545;
-    font-weight: bold;
-    font-size:20px;
-    text-decoration:none;
-    margin-top: 15px;
-    
-    }
-
-    .travaux-content{
-        font-size: 20px;
-        width: 550px;
-        margin-left:80px;
-        margin-top:100px ;
-        
-    }
-
-    .travaux-content-2{
-        font-size: 20px;
-        width: 300px;
-    }
-
-    .wp-block-column{
-        margin-top: -100px;
-    }
-
-
-
-    
-
-
-
-
- }
 
 
 

@@ -31,3 +31,4 @@
     </div>
 
 
+    <img class="logo-medeber-fullscreen" src="/wp-content/themes/Medeber/img/logo.png">
